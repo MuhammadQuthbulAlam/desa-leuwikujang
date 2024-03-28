@@ -161,8 +161,28 @@
     align-self: center;
   }
 }
+
+@media screen and (max-width: 960px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
 /* Perangkat dengan lebar layar 768px dan di bawahnya */
 @media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
+
+@media screen and (max-width: 540px) {
   nav ul {
     justify-content: center;
   }
